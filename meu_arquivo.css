@@ -1,0 +1,110 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body > header{
+    background-color: #2f3640;
+    padding: 16px 0;
+    color: #f5f6fa;
+} 
+/* quero editar o header filho direto do body */
+
+header .container{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header li{
+    display: inline;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-left: 16px;
+}
+
+header li a{
+    color: #f5f6fa;
+    text-decoration: none; 
+}
+
+header li a:hover{
+    text-decoration: underline;
+}
+
+.container{
+    width: 1366px; /*que é a largura de um notebook padrão HD*/
+    margin: 0 auto 0 auto;  
+}
+.articles{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.articles article img{
+    /* height: 180px; limitando a altura, a largura vai se adequar mantendo a proporção */
+    width: 100%;
+}
+
+.articles article{
+    width: 30%;
+}
+section{
+    padding: 16px 0;
+}
+section h2,
+.articles article{
+    margin-bottom:16px;
+}
+.articles article h3{
+    margin-top: 8px;
+    margin-bottom: 8px;
+    font-size: 24px;
+    
+}
+.articles article a{
+    background-color: blue; 
+    color: #ffff;
+    padding: 8px;
+    display: inline-block;
+    text-decoration: none; 
+    font-weight: bold;
+    margin-top: 8px;
+    /* removendo o underline */
+}
+
+.articles article a:hover{
+    text-decoration: underline;
+    /* quando eu passar o mouse em cima, vai aparecer o efeito underline */
+}
+
+.articles article p,
+.articles article a {
+    font-family: Arial, Helvetica, sans-serif;
+}
+section h2{
+    font-size: 32px;
+}
+#sports{
+    background-color: rgba(191, 241, 191, 0.1);
+}
+#sports .articles article a{
+    background-color: #009432;
+}
+#economy {
+    background-color:rgb(220, 239, 251);
+}
+#tech{
+    background-color: rgb(248, 248, 213);
+}
+#tech .articles article a{
+    background-color: rgb(173, 173, 7);
+}
+#entertain{
+    background-color: rgb(250, 218, 218);
+}
+
+#entertain .articles article a{
+    background-color: rgb(245, 80, 80);
+}

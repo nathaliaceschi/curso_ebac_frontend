@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas</title>
+    <link rel="stylesheet" href="./main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section id="primeira-secao">
+        <header>
+            <h1>Lista de Tarefas</h1>
+            <button type="button">Nova Tarefa +</button>
+        </header>
+        <form>
+            <h2>Cadastrar Nova Tarefa</h2>
+            <input type="text" name="nova-tarefa" id="nova-tarefa" placeholder="Nome da Tarefa" required>
+            <button type="submit">Cadastrar</button>
+            <button type="reset" id="cancelar-botao">Cancelar</button>
+        </form>
+    </section>
+    <section id="segunda-secao">
+        <ul>
+            <li>
+                estudar javaScript
+                <div class="botoes">
+                    <button type="button" class="botao-concluir">
+                        <img src="./imagens/check.png" alt="Botão Concluir">
+                    </button>
+                    <button type="button" class="botao-excluir">
+                        <img src="./imagens/botao-x.png" alt="Botão Excluir">
+                    </button>
+                </div>
+            </li> 
+            <li>
+                estudar jQuery
+                <div class="botoes">
+                    <button type="button" class="botao-concluir">
+                        <img src="./imagens/check.png" alt="Botão Concluir">
+                    </button>
+                    <button type="button" class="botao-excluir">
+                        <img src="./imagens/botao-x.png" alt="Botão Excluir">
+                    </button>
+                    
+                </div>
+            </li>  
+        </ul>
+    </section>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="./main.js"></script>
+</body>
+</html>

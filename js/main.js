@@ -43,7 +43,7 @@ $('form').validate({
         sobrenome: '<span class = "error">Por favor, digite seu sobrenome</span>',
         cpf: '<span class = "error">Por favor, digite seu CPF (apenas números)</span>',
         email: '<span class = "error">Por favor, digite seu e-mail</span>',
-        celular: 'Por favor, digite seu celular (apenas números)</span>',
+        celular: '<span class= "error">Por favor, digite seu celular (apenas números)</span>',
         endereco: '<span class = "error">Por favor, digite seu endereço com número e bairro</span>',
         cidade: '<span class = "error">Por favor, digite a Cidade e o Estado</span>',
         cep: '<span class = "error">Por favor, digite seu CEP (apenas números)</span>'

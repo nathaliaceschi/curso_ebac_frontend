@@ -1,0 +1,156 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #b5f1e9;
+}
+
+.container{
+    width: 80%;
+    height: 80vh;
+    display: flex;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .212);
+}
+
+.form-image{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f2d5f3d7;
+    padding: 1rem;
+}
+
+.form-image img{
+    width: 31rem;
+}
+
+.form{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 3rem;
+}
+
+h2{
+    margin-bottom: 3rem;
+}
+
+h2::after{
+    content: '';
+    display: block;
+    width: 5rem;
+    height: 0.3rem;
+    background-color: #00BFA6;
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 10px;
+}
+
+.button-container{
+    display: flex;
+    align-items: center;
+}
+
+.button-container button{
+    width: 100%;
+    border: none;
+    background-color: #00BFA6;
+    color: #fff;
+    padding: 0.62rem;
+    border-radius: 5px;
+    margin-top: 2rem;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 0.93rem;
+}
+
+.button-container button:hover{
+    background-color: #05dfc2;
+}
+
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem 0;
+    gap: 1.5rem;
+}
+
+.input-group{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.1rem ;
+}
+
+.input-group input{
+    margin: 0.6rem 0;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #0000001c;
+}
+
+.input-group input:hover{
+    background-color: #eeeeee75;
+}
+
+.input-group input:focus-visible{
+    outline: 1px solid #00BFA6;
+}
+
+.input-group label{
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #000000c0;
+}
+
+.input-group input::placeholder{
+    color: #000000be;
+}
+
+
+@media screen and (max-width: 1516px){
+    .form-image{
+        display: none;
+    }
+    .container  {
+        width: 50%;
+    }
+    .form{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:1064px){
+    .container{
+        width: 90%;
+        height: auto;
+    }
+
+    .content{
+        flex-direction: column;
+        overflow-y: scroll;
+        flex-wrap: nowrap;
+        max-height: 15rem;
+        padding-right: 10rem;
+    }
+}
+
+.error{
+    color: red;
+    font-size: 10px;
+    margin-bottom: 0.5rem;
+}
+

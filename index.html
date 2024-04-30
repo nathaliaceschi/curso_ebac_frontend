@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastramento</title>
+    <link rel="stylesheet" href="./main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="form-image">
+            <img src="./images/undraw_undraw_undraw_undraw_sign_up_ln1s_-1-_s4bc_-1-_ee41_-1-_3xti.svg" alt="">
+        </div>
+        <div class="form">
+            <form>
+                <h2>Cadastre-se</h2>
+                <div class="content">
+                    <div class="input-group">
+                        <label for="nome">Nome:</label>
+                        <input type="text" name="nome" id="nome" placeholder="Digite seu primeiro nome">
+                        <label for="sobrenome">Sobrenome:</label>
+                        <input type="text" name="sobrenome" id="sobrenome" placeholder="Digite seu sobrenome">
+                        <label for="cpf">CPF:</label>
+                        <input type="text" name="cpf" id="cpf" placeholder="000.000.000-00">
+                    </div>
+                    <div class="input-group">
+                        <label for="email">E-mail:</label>
+                        <input type="email" name="email" id="email" placeholder="Digite seu e-mail">
+                        <label for="celular">Celular:</label>
+                        <input type="text" name="celular" id="celular" placeholder="(00) 00000-0000">
+                        <label for="telefone">Telefone:</label>
+                        <input type="tel" name="telefone" id="telefone" placeholder="(00) 0000-0000">
+                    </div>
+                    <div class="input-group">
+                        <label for="endereco">Endereço:</label>
+                        <input type="text" name="endereco" id="endereco" placeholder="Rua Java, nº 00, jQuery">
+                        <label for="cidade">Cidade/Estado:</label>
+                        <input type="text" name="cidade" id="cidade" placeholder="Cidade/Estado">
+                        <label for="cep">CEP:</label>
+                        <input type="text" name="cep" id="cep" placeholder="00000-000">
+                    </div>
+                </div>
+                <div class="button-container">
+                <button type="submit">Enviar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="./js/jquery.mask.min.js"></script>
+    <script src="./js/jquery.validate.min.js"></script>
+    <script src="./js/messages_pt_BR.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
